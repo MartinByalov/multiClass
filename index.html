@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мулти-клас</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+    
+        <header>
+            <h1>Мулти-клас</h1>
+            <p>🇴 = Мини-Похвала, ❌ = Мини-Забележка. 3 последователни до официална Похвала/Забележка.</p>
+        </header>
+
+        <main>
+
+            <section id="import-section">
+                <button id="importFileBtn">Импорт</button>
+                <button id="exportAllBtn">Експорт</button>
+                <input type="text" id="searchInput" placeholder="🔎 Търсене по име или №...">
+            </section>
+            
+            <hr> 
+
+            <div id="classTabs">
+            </div>
+
+            <hr>
+            <div class="table-container">
+                <table id="gradebook">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Име на ученик</th>
+                            <th>Въвеждане</th> <th>Действия</th> <th>Поведение</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
